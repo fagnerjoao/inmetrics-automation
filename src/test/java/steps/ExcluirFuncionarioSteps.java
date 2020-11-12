@@ -20,7 +20,6 @@ public class ExcluirFuncionarioSteps {
     @Quando("clico em EXCLUIR")
     public void clico_em_excluir() {
         empregadosPage.clickBtnExcluir();
-
     }
 
     @Então("valido que o funcionário removido com sucesso")
@@ -29,8 +28,6 @@ public class ExcluirFuncionarioSteps {
         empregadosPage.setInputBusca(nome);
         empregadosPage.isNotVisibleRegistroTabela();
         capturarTela.capturaTela();
-
-
     }
 
 }

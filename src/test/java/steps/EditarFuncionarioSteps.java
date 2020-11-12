@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import pages.EmpregadosFormularioPage;
 import pages.EmpregadosPage;
 import tools.CapturarTela;
+
 import java.awt.*;
 import java.io.IOException;
 
@@ -30,7 +31,7 @@ public class EditarFuncionarioSteps {
     }
 
     @E("envio o formulário com os dados {string} {string} {string} do funcionário editados")
-    public void envioOFormulárioComOsDadosDoFuncionárioEditados(String cargo,  String salario, String tipoContrataca) throws IOException, AWTException {
+    public void envioOFormulárioComOsDadosDoFuncionárioEditados(String cargo, String salario, String tipoContrataca) throws IOException, AWTException {
         empregadosFormularioPage.setInputCargo(cargo);
         empregadosFormularioPage.setInputSalario(salario);
         empregadosFormularioPage.clickTipoContratacao(tipoContrataca);

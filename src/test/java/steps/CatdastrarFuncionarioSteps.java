@@ -30,7 +30,6 @@ public class CatdastrarFuncionarioSteps {
         empregadosFormularioPage.setInputCpf(cpf);
         empregadosFormularioPage.setInputSalario(salario);
         empregadosFormularioPage.setSelectSexo(sexo);
-        //Thread.sleep(3000);
         empregadosFormularioPage.clickTipoContratacao(tipoContratacao);
         empregadosFormularioPage.setInputAdmissao(dataAdm);
         capturarTela.capturaTela();

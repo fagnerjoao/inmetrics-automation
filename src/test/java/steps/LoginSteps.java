@@ -14,7 +14,7 @@ import java.io.IOException;
 public class LoginSteps {
     CapturarTela capturarTela = new CapturarTela();
     LoginPage loginPage = new LoginPage();
-    EmpregadosPage empregadosPage =new EmpregadosPage();
+    EmpregadosPage empregadosPage = new EmpregadosPage();
 
     String usuario = "inMetricsRH";
     String senha = "senha1234";
@@ -51,7 +51,6 @@ public class LoginSteps {
         loginPage.setInputSenha(senha);
         loginPage.clickBtnEntre();
         capturarTela.capturaTela();
-
     }
 
 }

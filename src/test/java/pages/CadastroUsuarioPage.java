@@ -15,10 +15,8 @@ public class CadastroUsuarioPage {
     protected WebElement inputConfirmSenha;
 
 
-
     public void setInputConfirmSenha(String senha) {
         inputConfirmSenha.click();
         inputConfirmSenha.sendKeys(senha);
     }
-
 }

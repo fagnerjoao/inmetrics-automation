@@ -1,6 +1,7 @@
 package webService;
 
 import org.junit.Test;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
@@ -26,6 +27,6 @@ public class WebService {
                 .get("https://inm-api-test.herokuapp.com/empregado/list_all")
                 .then()
                 .statusCode(200)
-                .body("nome", hasItems("joão","Parker Rowe"));
+                .body("nome", hasItems("joão", "Parker Rowe"));
     }
 }

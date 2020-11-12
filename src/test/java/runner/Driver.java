@@ -25,7 +25,7 @@ public class Driver {
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-infobars", "--disable-gpu", "--window-size=1920,1200",
-                "--ignore-certificate-errors", "--disable-notifications", "--disable-popup-blocking","--incognito");
+                "--ignore-certificate-errors", "--disable-notifications", "--disable-popup-blocking", "--incognito");
 
         driver = new ChromeDriver(options);
 
@@ -38,7 +38,6 @@ public class Driver {
     public static WebDriver getDriver() {
         return driver;
     }
-
 
 
     @After
